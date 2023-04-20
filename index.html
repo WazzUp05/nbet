@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>NBet</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/css/intlTelInput.css" />
+        <link rel="stylesheet" href="./assets/css/style.css" />
+    </head>
+    <body>
+        <main>
+            <section class="app">
+                <img src="./assets/img/logo.png" alt="Logo" class="logo" />
+                <h1 class="title">
+                    <span>WELCOME BONUS</span><br />
+                    2,500 AUD + 200 FS!
+                </h1>
+                <p class="text-phone">Enter your <b>phone number</b> to get a bonus.</p>
+                <form class="form" preventDefault>
+                    <div class="iti">
+                        <input class="input-phone" type="text" id="phone" />
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" required type="checkbox" id="agree" value="option1" />
+                        <label class="form-check-label" for="agree">I agree to receive messages</label>
+                    </div>
+                    <button type="button" id="btn-submit" class="btn">Get bonus</button>
+                </form>
+                <div class="modal">
+                    <div class="close">
+                        <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.13171 8.13171L24.3952 24.3952" stroke="#CFC8C8" stroke-width="2" />
+                            <path d="M8.48529 24.7487L24.7487 8.48526" stroke="#CFC8C8" stroke-width="2" />
+                        </svg>
+                    </div>
+                    <p class="modal__text">
+                        Download the app, register, and enter the promo code from the SMS text message to claim the
+                        bonus!
+                    </p>
+                    <a href="#"><button class="btn">Download</button></a>
+                </div>
+            </section>
+        </main>
+
+        <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/intlTelInput.min.js"></script>
+        <script src="./assets/js/index.js"></script>
+    </body>
+</html>
