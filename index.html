@@ -28,6 +28,10 @@
                     <div class="iti">
                         <input class="input-phone" type="text" id="phone" />
                     </div>
+                    <div class="form-validation">
+                        <span id="valid-msg" class="hide">Valid number</span>
+                        <span id="error-msg" class="hide"></span>
+                    </div>
                     <div class="form-check">
                         <input class="form-check-input" required type="checkbox" id="agree" value="option1" />
                         <label class="form-check-label" for="agree">I agree to receive messages</label>
@@ -51,6 +55,7 @@
         </main>
 
         <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/intlTelInput.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
         <script src="./assets/js/index.js"></script>
     </body>
 </html>

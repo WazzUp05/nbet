@@ -52,6 +52,10 @@ a {
     font-size: 20px;
 }
 
+/* .input-phone:focus-visible {
+    outline: none !important;
+} */
+
 .iti--allow-dropdown input,
 .iti--allow-dropdown input[type='text'],
 .iti--allow-dropdown input[type='tel'],
@@ -67,7 +71,15 @@ a {
     background: #f5f1f1;
     border-radius: 100px 0 0 100px;
 }
-
+.hide {
+    display: none;
+}
+#valid-msg {
+    color: #00c900;
+}
+/* #error-msg {
+    color: red;
+} */
 .form-check {
     text-align: center;
     color: #fff;
@@ -77,6 +89,19 @@ a {
     justify-content: center;
     margin-bottom: 40px;
     position: relative;
+}
+
+.form-validation {
+    position: relative;
+    color: #fff;
+}
+
+#error-msg,
+#valid-msg {
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 input[type='checkbox'] {
@@ -113,6 +138,12 @@ input[type='checkbox'] {
 
 .btn:hover {
     background: #ec3e2b;
+}
+
+.btn:disabled {
+    background: #858484;
+    pointer-events: none;
+    box-shadow: none;
 }
 
 .modal {
